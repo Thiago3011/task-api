@@ -11,3 +11,8 @@ def home():
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
+
+
+@app.get("/tasks")
+def list_tasks():
+    return []
